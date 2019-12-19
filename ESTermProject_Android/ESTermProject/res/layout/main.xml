@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/bg">>
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배열 생성 "
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <Spinner
+            android:id="@+id/int_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/create"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/Array_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배열 요소 개수 "
+            android:textSize="10sp"
+            android:layout_alignBottom="@+id/int_list"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="43dp"
+      />
+
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/create"
+            android:layout_alignLeft="@+id/Array_size"
+            android:layout_marginTop="103dp" />
+
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignBaseline="@+id/TV1"
+            android:layout_alignBottom="@+id/TV1"
+            android:layout_toRightOf="@+id/int_list" />
+
+        <EditText
+            android:id="@+id/enterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="덧셈 결과는?"
+            android:digits="0123456789" 
+            android:inputType="number"
+            android:maxLength="2"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="123dp" />
+
+        <TextView
+            android:id="@+id/TV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/enterText"
+            android:layout_alignLeft="@+id/TV1"
+            android:layout_marginBottom="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/YorN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TV3"
+            android:layout_below="@+id/TV3"
+            android:layout_marginTop="37dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="확인 "
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/TV3"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/create"
+            android:layout_alignParentBottom="true"
+            android:text="clear" />
+    </RelativeLayout>
